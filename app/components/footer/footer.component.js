@@ -8,21 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var store_1 = require('@ngrx/store');
+var core_1 = require("@angular/core");
+var store_1 = require("@ngrx/store");
 var FooterComponent = (function () {
     function FooterComponent(store) {
         this.store = store;
         this.counter = store.select('counter');
     }
-    FooterComponent = __decorate([
-        core_1.Component({
-            selector: 'footer',
-            templateUrl: "./app/components/footer/footer.component.html"
-        }), 
-        __metadata('design:paramtypes', [store_1.Store])
-    ], FooterComponent);
     return FooterComponent;
 }());
+FooterComponent = __decorate([
+    core_1.Component({
+        selector: 'footer',
+        templateUrl: "./app/components/footer/footer.component.html"
+    }),
+    __metadata("design:paramtypes", [store_1.Store])
+], FooterComponent);
 exports.FooterComponent = FooterComponent;
 //# sourceMappingURL=footer.component.js.map

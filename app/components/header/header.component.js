@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var store_1 = require('@ngrx/store');
-var counter_1 = require('./../../reducer/counter');
+var core_1 = require("@angular/core");
+var store_1 = require("@ngrx/store");
+var counter_1 = require("./../../reducer/counter");
 var HeaderComponent = (function () {
     function HeaderComponent(store) {
         this.store = store;
@@ -25,14 +25,14 @@ var HeaderComponent = (function () {
     HeaderComponent.prototype.reset = function () {
         this.store.dispatch({ type: counter_1.RESET });
     };
-    HeaderComponent = __decorate([
-        core_1.Component({
-            selector: 'header',
-            templateUrl: "./app/components/header/header.component.html"
-        }), 
-        __metadata('design:paramtypes', [store_1.Store])
-    ], HeaderComponent);
     return HeaderComponent;
 }());
+HeaderComponent = __decorate([
+    core_1.Component({
+        selector: 'header',
+        templateUrl: "./app/components/header/header.component.html"
+    }),
+    __metadata("design:paramtypes", [store_1.Store])
+], HeaderComponent);
 exports.HeaderComponent = HeaderComponent;
 //# sourceMappingURL=header.component.js.map
