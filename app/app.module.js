@@ -17,6 +17,7 @@ var header_component_1 = require("./../app/components/header/header.component");
 var footer_component_1 = require("./../app/components/footer/footer.component");
 var home_component_1 = require("./../app/components/home/home.component");
 var setEndPoint_component_1 = require("./../app/components/setEndPoint/setEndPoint.component");
+var responseQuery_component_1 = require("./../app/components/responseQuery/responseQuery.component");
 var appRoutes = [];
 var counter_1 = require("./reducer/counter");
 var AppModule = (function () {
@@ -43,7 +44,8 @@ AppModule = __decorate([
             header_component_1.HeaderComponent,
             footer_component_1.FooterComponent,
             home_component_1.HomeComponent,
-            setEndPoint_component_1.SetEndPointComponent
+            setEndPoint_component_1.SetEndPointComponent,
+            responseQuery_component_1.responseQueryComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     }),

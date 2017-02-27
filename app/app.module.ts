@@ -12,7 +12,7 @@ import {HeaderComponent} from './../app/components/header/header.component';
 import {FooterComponent} from './../app/components/footer/footer.component';
 import {HomeComponent} from './../app/components/home/home.component';
 import {SetEndPointComponent} from './../app/components/setEndPoint/setEndPoint.component';
-
+import {responseQueryComponent} from './../app/components/responseQuery/responseQuery.component';
 
 const appRoutes: Routes = [
 
@@ -38,7 +38,8 @@ import { counterReducer } from './reducer/counter';
        HeaderComponent,
        FooterComponent,
        HomeComponent,
-       SetEndPointComponent
+       SetEndPointComponent,
+       responseQueryComponent
     ],
   bootstrap:    [ AppComponent ]
 })

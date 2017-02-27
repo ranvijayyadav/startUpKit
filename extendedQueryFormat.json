@@ -4,7 +4,16 @@
 		"RollDownQuery" : {
 			"SQ1" : {
 				"Query" : "Select *",
-				"RollDownQuery" : {}
+				"RollDownQuery" : {
+                    "Query1" : {
+                        "Query" : "Select * from xyz3",
+                        "RollDownQuery" : {}
+                    },
+                    "Query2" : {
+                        "Query" : "Select * from xyz3",
+                        "RollDownQuery" : {}
+                    }
+                }
 			},
             "SQ2":{
 				"Query" : "Select *",
