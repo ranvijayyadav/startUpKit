@@ -10,7 +10,7 @@ interface AppState {
   selector: 'responseQuery',
   templateUrl:`./app/components/responseQuery/responseQuery.component.html`
 })
-export class responseQueryComponent {
+export class ResponseQueryComponent {
     dataFormat:any={
         "RootQuery1" : {
             "Query" : "Select ABC, count(*) cnt from xyz group by ABC",

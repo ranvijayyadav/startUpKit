@@ -18,6 +18,9 @@ var footer_component_1 = require("./../app/components/footer/footer.component");
 var home_component_1 = require("./../app/components/home/home.component");
 var setEndPoint_component_1 = require("./../app/components/setEndPoint/setEndPoint.component");
 var responseQuery_component_1 = require("./../app/components/responseQuery/responseQuery.component");
+var microService_component_1 = require("./../app/components/microService/microService.component");
+var microServiceList_component_1 = require("./../app/components/microServiceList/microServiceList.component");
+var dataSource_component_1 = require("./../app/components/dataSource/dataSource.component");
 var appRoutes = [];
 var counter_1 = require("./reducer/counter");
 var AppModule = (function () {
@@ -45,7 +48,10 @@ AppModule = __decorate([
             footer_component_1.FooterComponent,
             home_component_1.HomeComponent,
             setEndPoint_component_1.SetEndPointComponent,
-            responseQuery_component_1.responseQueryComponent
+            responseQuery_component_1.ResponseQueryComponent,
+            microService_component_1.MicroServiceComponent,
+            microServiceList_component_1.MicroServiceListComponent,
+            dataSource_component_1.DataSourceComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     }),

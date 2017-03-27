@@ -1,0 +1,31 @@
+<div class="panel panel-default col-sm-8 homeContainerColumn ">
+
+
+    <div class="panel-heading">Micro service data source panel</div>
+    <div class="panel-body dataSourcePanelBody">
+        <div class="row responseRow">
+            <div class="col-md-4">Data source Alias</div>
+            <input class="col-md-8">
+        </div>
+        <div class="row responseRow">
+            <div class="col-md-4">Data source</div>
+            <div class="col-md-8">
+                <button (click)="microServiceHandler()">Micro Service</button>
+                <button (click)="queryHandler()">Query</button>
+            </div>
+        </div>
+        <div *ngIf='isMicroServiceSelected' class="row responseRow">
+            <div class="col-md-4">Data service</div>
+            <input class="col-md-8">
+        </div>
+        <div *ngIf='isQuerySelected' class="row responseRow">
+            <div class="col-md-4">Query</div>
+            <textarea class="col-md-8">Query here</textarea>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button (click)="cancelHandler()">Cancel</button>
+        <button (click)="validateHandler()">Validate</button>
+        <button (click)="saveHandler()">Save</button>
+    </div>
+</div>

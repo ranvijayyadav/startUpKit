@@ -9,8 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var responseQueryComponent = (function () {
-    function responseQueryComponent() {
+var ResponseQueryComponent = (function () {
+    function ResponseQueryComponent() {
         this.dataFormat = {
             "RootQuery1": {
                 "Query": "Select ABC, count(*) cnt from xyz group by ABC",
@@ -31,14 +31,14 @@ var responseQueryComponent = (function () {
             }
         };
     }
-    return responseQueryComponent;
+    return ResponseQueryComponent;
 }());
-responseQueryComponent = __decorate([
+ResponseQueryComponent = __decorate([
     core_1.Component({
         selector: 'responseQuery',
         templateUrl: "./app/components/responseQuery/responseQuery.component.html"
     }),
     __metadata("design:paramtypes", [])
-], responseQueryComponent);
-exports.responseQueryComponent = responseQueryComponent;
+], ResponseQueryComponent);
+exports.ResponseQueryComponent = ResponseQueryComponent;
 //# sourceMappingURL=responseQuery.component.js.map

@@ -1,19 +1,21 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { StoreModule } from '@ngrx/store';
 
 
-import { AppComponent }   from './app.component';
+import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import {HeaderComponent} from './../app/components/header/header.component';
-import {FooterComponent} from './../app/components/footer/footer.component';
-import {HomeComponent} from './../app/components/home/home.component';
-import {SetEndPointComponent} from './../app/components/setEndPoint/setEndPoint.component';
-import {responseQueryComponent} from './../app/components/responseQuery/responseQuery.component';
-
+import { HeaderComponent } from './../app/components/header/header.component';
+import { FooterComponent } from './../app/components/footer/footer.component';
+import { HomeComponent } from './../app/components/home/home.component';
+import { SetEndPointComponent } from './../app/components/setEndPoint/setEndPoint.component';
+import { ResponseQueryComponent } from './../app/components/responseQuery/responseQuery.component';
+import { MicroServiceComponent } from './../app/components/microService/microService.component';
+import {MicroServiceListComponent} from './../app/components/microServiceList/microServiceList.component';
+import {DataSourceComponent} from './../app/components/dataSource/dataSource.component';
 const appRoutes: Routes = [
 
 ];
@@ -21,7 +23,7 @@ const appRoutes: Routes = [
 import { counterReducer } from './reducer/counter';
 
 @NgModule({
-  imports:      [
+    imports: [
         BrowserModule,
         AppRoutingModule,
         /**
@@ -31,17 +33,20 @@ import { counterReducer } from './reducer/counter';
          * meta-reducer. This returns all providers for an @ngrx/store
          * based application.
          */
-        StoreModule.provideStore({counter:counterReducer})
-   ],
-  declarations: [
-       AppComponent,
-       HeaderComponent,
-       FooterComponent,
-       HomeComponent,
-       SetEndPointComponent,
-       responseQueryComponent
+        StoreModule.provideStore({ counter: counterReducer })
     ],
-  bootstrap:    [ AppComponent ]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        HomeComponent,
+        SetEndPointComponent,
+        ResponseQueryComponent,
+        MicroServiceComponent,
+        MicroServiceListComponent,
+        DataSourceComponent
+    ],
+    bootstrap: [AppComponent]
 })
 
 export class AppModule { }
